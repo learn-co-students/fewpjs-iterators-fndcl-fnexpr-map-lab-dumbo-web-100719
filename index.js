@@ -12,5 +12,9 @@ const tutorials = [
 ];
 
 const titleCased = () => {
-  return tutorials
+ let results = tutorials.map((tutorial) => {
+   return tutorial.replace(/\b\w/g, v => v.toUpperCase())
+  })
+  return results
 }
+
